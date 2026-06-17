@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH = "/usr/local/share/dotnet/dotnet:${env.PATH}"
+        PATH = "/usr/local/share/dotnet:${env.PATH}"
     }
 
     stages {
@@ -13,12 +13,12 @@ pipeline {
         }
         stage("Build Project"){
             steps {
-                sh 'dotnet build'
+                sh 'dotnet build --no-restore'
             }
         }
         stage("Run Tests"){
             steps {
-                sh 'dotnet test'
+                sh 'dotnet test --no-build'
             }
         }
     }
