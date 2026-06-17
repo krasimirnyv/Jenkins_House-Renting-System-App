@@ -1,0 +1,14 @@
+.idea
+bin/
+/obj
+/Properties
+*nuget*
+HouseRentingSystem.Web/Properties/launchSettings.json
+HouseRentingSystem.Web/Properties/serviceDependencies.local.json
+HouseRentingSystem.Web/Properties/serviceDependencies.local.json.user
+HouseRentingSystem.Web/Properties/serviceDependencies.json
+.dll
+.cache
+/obj/*
+obj/
+.DS_Store
