@@ -17,10 +17,5 @@ pipeline {
                 sh 'dotnet test'
             }
         }
-        stage("Run Tests"){
-            steps {
-                sh 'dotnet test'
-            }
-        }
     }
 }
