@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "/usr/local/share/dotnet/dotnet:${env.PATH}"
+    }
+
     stages {
         stage("Restore Packages"){
             steps {
